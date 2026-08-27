@@ -1,12 +1,250 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Du lịch việt nam</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>hello chị bông thối mồm và hôi nách</h1>
-    <u><p>hello</p></u>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <header>
+      <div class="logo">VIỆT NAM <span>DI SẢN</span></div>
+
+      <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#di-tich">Di tích</a>
+        <a href="#di-san">Di sản</a>
+        <a href="#van-hoa">Văn hóa</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+
+      <a href="#di-tich" class="nav-button">Khám phá</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="small-title">HÀNH TRÌNH QUA DÒNG LỊCH SỬ</p>
+
+        <h1>
+          Khám phá vẻ đẹp
+          <br />
+          <span>Việt Nam</span>
+        </h1>
+
+        <p class="hero-text">
+          Từ những thành phố cổ kính đến những danh thắng thiên nhiên hùng vĩ,
+          mỗi vùng đất Việt Nam đều lưu giữ một câu chuyện đáng để khám phá.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#di-tich" class="main-button"> Khám phá ngay </a>
+
+          <a href="#di-san" class="second-button"> Xem di sản ↓ </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="intro">
+      <div class="intro-number">01</div>
+
+      <div class="intro-content">
+        <p class="section-label">VỀ VIỆT NAM</p>
+
+        <h2>
+          Một đất nước nhỏ,
+          <br />
+          một kho tàng <span>lớn</span>
+        </h2>
+
+        <p>
+          Việt Nam là nơi giao thoa giữa thiên nhiên, lịch sử và văn hóa. Qua
+          hàng nghìn năm hình thành và phát triển, những công trình kiến trúc,
+          thành phố cổ, đền đài và danh thắng đã trở thành những dấu ấn đặc biệt
+          của dân tộc.
+        </p>
+
+        <p>
+          Hãy cùng bắt đầu hành trình khám phá những địa điểm mang trong mình vẻ
+          đẹp của quá khứ và sức sống của hiện tại.
+        </p>
+      </div>
+    </section>
+
+    <!-- ĐỊA ĐIỂM NỔI BẬT -->
+    <section class="destinations" id="di-tich">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">ĐỊA ĐIỂM NỔI BẬT</p>
+
+          <h2>
+            Những nơi
+            <span>đáng đến</span>
+          </h2>
+        </div>
+
+        <p class="heading-description">
+          Mỗi địa danh là một lát cắt của lịch sử, văn hóa và thiên nhiên Việt
+          Nam.
+        </p>
+      </div>
+
+      <div class="cards">
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="card-image hue">
+            <div class="location">QUẢNG NINH</div>
+          </div>
+
+          <div class="card-content">
+            <span class="card-number">01</span>
+
+            <h3>Vịnh Hạ Long</h3>
+
+            <p>
+              Quần thể núi đá vôi và hàng nghìn hòn đảo giữa biển xanh, tạo nên
+              một trong những cảnh quan đặc biệt nhất Việt Nam.
+            </p>
+
+            <a href="#">Khám phá địa điểm →</a>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="card-image hoi-an">
+            <div class="location">QUẢNG NAM</div>
+          </div>
+
+          <div class="card-content">
+            <span class="card-number">02</span>
+
+            <h3>Phố cổ Hội An</h3>
+
+            <p>
+              Những ngôi nhà cổ, con phố nhỏ và ánh đèn lồng tạo nên một không
+              gian mang đậm dấu ấn của thương cảng xưa.
+            </p>
+
+            <a href="#">Khám phá địa điểm →</a>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="card-image hue-di-tich">
+            <div class="location">THỪA THIÊN HUẾ</div>
+          </div>
+
+          <div class="card-content">
+            <span class="card-number">03</span>
+
+            <h3>Cố đô Huế</h3>
+
+            <p>
+              Vùng đất từng là kinh đô của triều Nguyễn, nổi bật với hệ thống
+              thành quách, cung điện và những công trình kiến trúc cổ.
+            </p>
+
+            <a href="#">Khám phá địa điểm →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DI SẢN -->
+    <section class="heritage" id="di-san">
+      <div class="heritage-overlay">
+        <p class="section-label">DI SẢN VIỆT NAM</p>
+
+        <h2>
+          Những giá trị
+          <br />
+          vượt qua <span>thời gian</span>
+        </h2>
+
+        <p>
+          Di sản không chỉ là những công trình được xây dựng từ hàng trăm năm
+          trước. Đó còn là ký ức, phong tục, nghệ thuật và câu chuyện được
+          truyền lại qua nhiều thế hệ.
+        </p>
+      </div>
+    </section>
+
+    <!-- KHÁM PHÁ THEO VÙNG -->
+    <section class="regions" id="van-hoa">
+      <div class="section-heading center">
+        <p class="section-label">HÀNH TRÌNH KHÁM PHÁ</p>
+
+        <h2>
+          Việt Nam qua
+          <span>ba miền</span>
+        </h2>
+      </div>
+
+      <div class="region-grid">
+        <div class="region north">
+          <div>
+            <span>01</span>
+            <h3>Miền Bắc</h3>
+            <p>
+              Nơi lưu giữ những dấu ấn lịch sử lâu đời và cảnh quan núi non hùng
+              vĩ.
+            </p>
+          </div>
+        </div>
+
+        <div class="region central">
+          <div>
+            <span>02</span>
+            <h3>Miền Trung</h3>
+            <p>Vùng đất của cố đô, phố cổ và những di sản văn hóa đặc sắc.</p>
+          </div>
+        </div>
+
+        <div class="region south">
+          <div>
+            <span>03</span>
+            <h3>Miền Nam</h3>
+            <p>
+              Một vùng đất năng động với sông nước, văn hóa đa dạng và những đô
+              thị sôi động.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <div class="quote-mark">“</div>
+
+      <p>
+        Mỗi chuyến đi không chỉ là hành trình đến một nơi mới, mà còn là hành
+        trình tìm hiểu những câu chuyện đã tạo nên một Việt Nam ngày hôm nay.
+      </p>
+
+      <span>— VIỆT NAM DI SẢN —</span>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="lien-he">
+      <div class="footer-logo">VIỆT NAM <span>DI SẢN</span></div>
+
+      <p>Khám phá lịch sử · Văn hóa · Thiên nhiên Việt Nam</p>
+
+      <div class="footer-links">
+        <a href="#home">Trang chủ</a>
+        <a href="#di-tich">Di tích</a>
+        <a href="#di-san">Di sản</a>
+        <a href="#van-hoa">Văn hóa</a>
+      </div>
+
+      <div class="copyright">
+        © 2026 Việt Nam Di Sản. Thiết kế với tình yêu dành cho Việt Nam.
+      </div>
+    </footer>
   </body>
 </html>

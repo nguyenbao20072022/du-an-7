@@ -1,0 +1,765 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f5f0;
+  color: #24221e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 85px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  z-index: 10;
+
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  font-size: 14px;
+  position: relative;
+  opacity: 0.9;
+}
+
+nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  padding: 9px 20px;
+
+  border-radius: 30px;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background: white;
+  color: #222;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 10%;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 720px;
+  color: white;
+}
+
+.small-title {
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(55px, 7vw, 95px);
+
+  line-height: 0.98;
+
+  font-weight: 400;
+
+  margin-bottom: 30px;
+}
+
+.hero h1 span {
+  font-style: italic;
+}
+
+.hero-text {
+  max-width: 580px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.main-button,
+.second-button {
+  padding: 13px 25px;
+  border-radius: 30px;
+
+  font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.main-button {
+  background: #b98745;
+  color: white;
+}
+
+.main-button:hover {
+  background: #d09b57;
+  transform: translateY(-3px);
+}
+
+.second-button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.second-button:hover {
+  background: white;
+  color: #222;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+
+  gap: 70px;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 130px 40px;
+}
+
+.intro-number {
+  font-size: 13px;
+  color: #b98745;
+
+  border-top: 1px solid #b98745;
+
+  padding-top: 15px;
+}
+
+.intro-content {
+  max-width: 750px;
+}
+
+.section-label {
+  color: #b98745;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.intro h2,
+.section-heading h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(40px, 5vw, 65px);
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  margin-bottom: 30px;
+}
+
+.intro h2 span,
+.section-heading h2 span {
+  color: #b98745;
+
+  font-style: italic;
+}
+
+.intro-content p:not(.section-label) {
+  color: #666;
+
+  max-width: 680px;
+
+  margin-bottom: 18px;
+
+  font-size: 16px;
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations {
+  background: #ebe7df;
+
+  padding: 110px 7%;
+}
+
+.section-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  max-width: 1200px;
+
+  margin: auto auto 60px;
+}
+
+.heading-description {
+  max-width: 330px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+.cards {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.card {
+  background: #f8f6f1;
+
+  transition: 0.4s;
+
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  height: 330px;
+
+  position: relative;
+
+  background-size: cover;
+
+  background-position: center;
+
+  transition: 0.5s;
+}
+
+.card:hover .card-image {
+  transform: scale(1.04);
+}
+
+/* ẢNH */
+
+.hue {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)),
+    url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=80");
+}
+
+.hoi-an {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)),
+    url("https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1000&q=80");
+}
+
+.hue-di-tich {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)),
+    url("https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=1000&q=80");
+}
+
+.location {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  color: white;
+
+  padding: 6px 12px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.card-number {
+  color: #b98745;
+
+  font-size: 12px;
+}
+
+.card h3 {
+  font-family: Georgia, serif;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  margin: 8px 0 15px;
+}
+
+.card p {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+.card a {
+  color: #a47438;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+/* =========================
+   HERITAGE
+========================= */
+
+.heritage {
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 10%;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.heritage-overlay {
+  max-width: 650px;
+
+  color: white;
+}
+
+.heritage h2 {
+  font-family: Georgia, serif;
+
+  font-size: clamp(45px, 6vw, 75px);
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  margin-bottom: 30px;
+}
+
+.heritage h2 span {
+  color: #d0a15f;
+
+  font-style: italic;
+}
+
+.heritage-overlay > p:last-child {
+  max-width: 550px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  line-height: 1.8;
+}
+
+/* =========================
+   REGIONS
+========================= */
+
+.regions {
+  padding: 120px 7%;
+}
+
+.center {
+  display: block;
+
+  text-align: center;
+}
+
+.center h2 {
+  margin-bottom: 60px;
+}
+
+.region-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.region {
+  min-height: 420px;
+
+  display: flex;
+
+  align-items: end;
+
+  padding: 30px;
+
+  color: white;
+
+  position: relative;
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.region::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.8));
+}
+
+.region > div {
+  position: relative;
+
+  z-index: 1;
+}
+
+.region span {
+  font-size: 12px;
+
+  color: #d0a15f;
+}
+
+.region h3 {
+  font-family: Georgia, serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  margin: 5px 0 10px;
+}
+
+.region p {
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  line-height: 1.6;
+}
+
+.north {
+  background-image: url("https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=80");
+}
+
+.central {
+  background-image: url("https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1000&q=80");
+}
+
+.south {
+  background-image: url("https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=1000&q=80");
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.quote {
+  background: #292722;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 110px 20px;
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+
+  font-size: 90px;
+
+  line-height: 0.5;
+
+  color: #b98745;
+}
+
+.quote p {
+  max-width: 850px;
+
+  margin: 30px auto;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(25px, 3vw, 40px);
+
+  line-height: 1.4;
+
+  font-style: italic;
+}
+
+.quote span {
+  font-size: 10px;
+
+  letter-spacing: 4px;
+
+  color: #b98745;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #1d1c19;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 70px 20px 30px;
+}
+
+.footer-logo {
+  font-size: 20px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.footer-logo span {
+  font-weight: normal;
+}
+
+footer > p {
+  margin: 15px 0 30px;
+
+  color: #888;
+
+  font-size: 13px;
+}
+
+.footer-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  margin-bottom: 50px;
+}
+
+.footer-links a {
+  font-size: 13px;
+
+  color: #aaa;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.copyright {
+  padding-top: 25px;
+
+  border-top: 1px solid #35332e;
+
+  color: #666;
+
+  font-size: 11px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .cards,
+  .region-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .heading-description {
+    margin-top: 20px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .intro-number {
+    max-width: 100px;
+  }
+
+  .hero {
+    min-height: 650px;
+
+    padding: 100px 7%;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 0 5%;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .intro,
+  .destinations,
+  .regions {
+    padding: 80px 6%;
+  }
+
+  .heritage {
+    padding: 80px 7%;
+  }
+}
