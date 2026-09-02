@@ -3,248 +3,453 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Du lịch việt nam</title>
+
+    <title>NEXUS GAMING - Gaming Gear Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- THANH ĐIỀU HƯỚNG -->
-    <header>
-      <div class="logo">VIỆT NAM <span>DI SẢN</span></div>
+    <!-- ================= HEADER ================= -->
 
-      <nav>
-        <a href="#home">Trang chủ</a>
-        <a href="#di-tich">Di tích</a>
-        <a href="#di-san">Di sản</a>
-        <a href="#van-hoa">Văn hóa</a>
-        <a href="#lien-he">Liên hệ</a>
-      </nav>
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="logo">
+          <span>NEXUS</span>
+          <small>GAMING</small>
+        </a>
 
-      <a href="#di-tich" class="nav-button">Khám phá</a>
+        <nav class="nav-links">
+          <a href="#home">Trang chủ</a>
+          <a href="#products">Sản phẩm</a>
+          <a href="#categories">Danh mục</a>
+          <a href="#deals">Khuyến mãi</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="searchBtn" aria-label="Tìm kiếm">
+            🔍
+          </button>
+
+          <button class="icon-btn" id="wishlistBtn" aria-label="Yêu thích">
+            ❤️
+            <span class="badge" id="wishlistCount">0</span>
+          </button>
+
+          <button class="icon-btn cart-btn" id="cartBtn" aria-label="Giỏ hàng">
+            🛒
+            <span class="badge" id="cartCount">0</span>
+          </button>
+
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="small-title">HÀNH TRÌNH QUA DÒNG LỊCH SỬ</p>
+    <!-- ================= SEARCH ================= -->
 
-        <h1>
-          Khám phá vẻ đẹp
-          <br />
-          <span>Việt Nam</span>
-        </h1>
+    <div class="search-panel" id="searchPanel">
+      <div class="container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Tìm kiếm chuột, bàn phím, tai nghe..."
+        />
 
-        <p class="hero-text">
-          Từ những thành phố cổ kính đến những danh thắng thiên nhiên hùng vĩ,
-          mỗi vùng đất Việt Nam đều lưu giữ một câu chuyện đáng để khám phá.
-        </p>
+        <button id="closeSearch">✕</button>
+      </div>
+    </div>
 
-        <div class="hero-buttons">
-          <a href="#di-tich" class="main-button"> Khám phá ngay </a>
+    <!-- ================= HERO ================= -->
 
-          <a href="#di-san" class="second-button"> Xem di sản ↓ </a>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="eyebrow">NEXT LEVEL GAMING</span>
+
+            <h1>
+              BUILD YOUR
+              <span>ULTIMATE</span>
+              GAMING SETUP
+            </h1>
+
+            <p>
+              Trang bị gaming chất lượng cao cho game thủ. Hiệu năng mạnh mẽ,
+              thiết kế hiện đại và trải nghiệm khác biệt.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#products" class="btn btn-primary"> KHÁM PHÁ NGAY </a>
+
+              <a href="#deals" class="btn btn-outline"> XEM KHUYẾN MÃI </a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>500+</strong>
+                <span>Sản phẩm</span>
+              </div>
+
+              <div>
+                <strong>50K+</strong>
+                <span>Khách hàng</span>
+              </div>
+
+              <div>
+                <strong>4.9/5</strong>
+                <span>Đánh giá</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="glow"></div>
+
+            <div class="hero-card">
+              <span class="floating-tag">PRO GEAR</span>
+
+              <div class="controller">🎮</div>
+
+              <div class="hero-product-info">
+                <span>FEATURED PRODUCT</span>
+
+                <h3>Razer BlackShark V2 Pro</h3>
+
+                <strong> 3.490.000₫ </strong>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- GIỚI THIỆU -->
-    <section class="intro">
-      <div class="intro-number">01</div>
+      <!-- ================= CATEGORIES ================= -->
 
-      <div class="intro-content">
-        <p class="section-label">VỀ VIỆT NAM</p>
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">SHOP BY CATEGORY</span>
+              <h2>Danh mục <span>Gaming Gear</span></h2>
+            </div>
+          </div>
 
-        <h2>
-          Một đất nước nhỏ,
-          <br />
-          một kho tàng <span>lớn</span>
-        </h2>
+          <div class="category-grid">
+            <button class="category-card" data-category="keyboard">
+              <span class="category-icon">⌨️</span>
+              <h3>Bàn phím</h3>
+              <p>Mechanical keyboard</p>
+            </button>
 
-        <p>
-          Việt Nam là nơi giao thoa giữa thiên nhiên, lịch sử và văn hóa. Qua
-          hàng nghìn năm hình thành và phát triển, những công trình kiến trúc,
-          thành phố cổ, đền đài và danh thắng đã trở thành những dấu ấn đặc biệt
-          của dân tộc.
-        </p>
+            <button class="category-card" data-category="mouse">
+              <span class="category-icon">🖱️</span>
+              <h3>Chuột</h3>
+              <p>Gaming mouse</p>
+            </button>
 
-        <p>
-          Hãy cùng bắt đầu hành trình khám phá những địa điểm mang trong mình vẻ
-          đẹp của quá khứ và sức sống của hiện tại.
-        </p>
-      </div>
-    </section>
+            <button class="category-card" data-category="headset">
+              <span class="category-icon">🎧</span>
+              <h3>Tai nghe</h3>
+              <p>Gaming headset</p>
+            </button>
 
-    <!-- ĐỊA ĐIỂM NỔI BẬT -->
-    <section class="destinations" id="di-tich">
-      <div class="section-heading">
+            <button class="category-card" data-category="monitor">
+              <span class="category-icon">🖥️</span>
+              <h3>Màn hình</h3>
+              <p>Gaming monitor</p>
+            </button>
+
+            <button class="category-card" data-category="chair">
+              <span class="category-icon">💺</span>
+              <h3>Ghế Gaming</h3>
+              <p>Gaming chair</p>
+            </button>
+
+            <button class="category-card" data-category="accessory">
+              <span class="category-icon">⚡</span>
+              <h3>Phụ kiện</h3>
+              <p>Gaming accessories</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRODUCTS ================= -->
+
+      <section class="section products-section" id="products">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">TOP GAMING GEAR</span>
+
+              <h2>
+                Sản phẩm
+                <span>nổi bật</span>
+              </h2>
+            </div>
+
+            <button class="reset-filter" id="resetFilter">Xem tất cả</button>
+          </div>
+
+          <div class="filter-bar">
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-category="all">
+                Tất cả
+              </button>
+
+              <button class="filter-btn" data-category="keyboard">
+                Bàn phím
+              </button>
+
+              <button class="filter-btn" data-category="mouse">Chuột</button>
+
+              <button class="filter-btn" data-category="headset">
+                Tai nghe
+              </button>
+
+              <button class="filter-btn" data-category="monitor">
+                Màn hình
+              </button>
+            </div>
+
+            <select id="sortSelect">
+              <option value="default">Sắp xếp</option>
+              <option value="price-low">Giá thấp → cao</option>
+              <option value="price-high">Giá cao → thấp</option>
+              <option value="rating">Đánh giá cao</option>
+              <option value="name">Tên A → Z</option>
+            </select>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <!-- ================= DEAL ================= -->
+
+      <section class="deal-section" id="deals">
+        <div class="container deal-content">
+          <div>
+            <span class="eyebrow">LIMITED TIME</span>
+
+            <h2>
+              FLASH SALE
+              <span>-30%</span>
+            </h2>
+
+            <p>
+              Những deal gaming cực hot chỉ xuất hiện trong thời gian giới hạn.
+            </p>
+          </div>
+
+          <div class="countdown">
+            <div>
+              <strong id="days">00</strong>
+              <span>Ngày</span>
+            </div>
+
+            <div>
+              <strong id="hours">00</strong>
+              <span>Giờ</span>
+            </div>
+
+            <div>
+              <strong id="minutes">00</strong>
+              <span>Phút</span>
+            </div>
+
+            <div>
+              <strong id="seconds">00</strong>
+              <span>Giây</span>
+            </div>
+          </div>
+
+          <a href="#products" class="btn btn-primary"> SĂN DEAL NGAY </a>
+        </div>
+      </section>
+
+      <!-- ================= FEATURES ================= -->
+
+      <section class="section">
+        <div class="container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🚚</div>
+              <h3>Miễn phí vận chuyển</h3>
+              <p>Cho đơn hàng từ 1.000.000₫</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <h3>Bảo hành chính hãng</h3>
+              <p>Cam kết sản phẩm chính hãng</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">↩️</div>
+              <h3>Đổi trả dễ dàng</h3>
+              <p>Đổi trả trong 7 ngày</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">💬</div>
+              <h3>Hỗ trợ 24/7</h3>
+              <p>Đội ngũ tư vấn luôn sẵn sàng</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="contact">
+      <div class="container footer-grid">
         <div>
-          <p class="section-label">ĐỊA ĐIỂM NỔI BẬT</p>
+          <a href="#" class="logo">
+            <span>NEXUS</span>
+            <small>GAMING</small>
+          </a>
 
-          <h2>
-            Những nơi
-            <span>đáng đến</span>
-          </h2>
+          <p>Gaming gear cho thế hệ game thủ mới.</p>
         </div>
 
-        <p class="heading-description">
-          Mỗi địa danh là một lát cắt của lịch sử, văn hóa và thiên nhiên Việt
-          Nam.
-        </p>
-      </div>
+        <div>
+          <h3>Danh mục</h3>
 
-      <div class="cards">
-        <!-- CARD 1 -->
-        <article class="card">
-          <div class="card-image hue">
-            <div class="location">QUẢNG NINH</div>
-          </div>
-
-          <div class="card-content">
-            <span class="card-number">01</span>
-
-            <h3>Vịnh Hạ Long</h3>
-
-            <p>
-              Quần thể núi đá vôi và hàng nghìn hòn đảo giữa biển xanh, tạo nên
-              một trong những cảnh quan đặc biệt nhất Việt Nam.
-            </p>
-
-            <a href="#">Khám phá địa điểm →</a>
-          </div>
-        </article>
-
-        <!-- CARD 2 -->
-        <article class="card">
-          <div class="card-image hoi-an">
-            <div class="location">QUẢNG NAM</div>
-          </div>
-
-          <div class="card-content">
-            <span class="card-number">02</span>
-
-            <h3>Phố cổ Hội An</h3>
-
-            <p>
-              Những ngôi nhà cổ, con phố nhỏ và ánh đèn lồng tạo nên một không
-              gian mang đậm dấu ấn của thương cảng xưa.
-            </p>
-
-            <a href="#">Khám phá địa điểm →</a>
-          </div>
-        </article>
-
-        <!-- CARD 3 -->
-        <article class="card">
-          <div class="card-image hue-di-tich">
-            <div class="location">THỪA THIÊN HUẾ</div>
-          </div>
-
-          <div class="card-content">
-            <span class="card-number">03</span>
-
-            <h3>Cố đô Huế</h3>
-
-            <p>
-              Vùng đất từng là kinh đô của triều Nguyễn, nổi bật với hệ thống
-              thành quách, cung điện và những công trình kiến trúc cổ.
-            </p>
-
-            <a href="#">Khám phá địa điểm →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- DI SẢN -->
-    <section class="heritage" id="di-san">
-      <div class="heritage-overlay">
-        <p class="section-label">DI SẢN VIỆT NAM</p>
-
-        <h2>
-          Những giá trị
-          <br />
-          vượt qua <span>thời gian</span>
-        </h2>
-
-        <p>
-          Di sản không chỉ là những công trình được xây dựng từ hàng trăm năm
-          trước. Đó còn là ký ức, phong tục, nghệ thuật và câu chuyện được
-          truyền lại qua nhiều thế hệ.
-        </p>
-      </div>
-    </section>
-
-    <!-- KHÁM PHÁ THEO VÙNG -->
-    <section class="regions" id="van-hoa">
-      <div class="section-heading center">
-        <p class="section-label">HÀNH TRÌNH KHÁM PHÁ</p>
-
-        <h2>
-          Việt Nam qua
-          <span>ba miền</span>
-        </h2>
-      </div>
-
-      <div class="region-grid">
-        <div class="region north">
-          <div>
-            <span>01</span>
-            <h3>Miền Bắc</h3>
-            <p>
-              Nơi lưu giữ những dấu ấn lịch sử lâu đời và cảnh quan núi non hùng
-              vĩ.
-            </p>
-          </div>
+          <a href="#products">Bàn phím</a>
+          <a href="#products">Chuột Gaming</a>
+          <a href="#products">Tai nghe</a>
+          <a href="#products">Màn hình</a>
         </div>
 
-        <div class="region central">
-          <div>
-            <span>02</span>
-            <h3>Miền Trung</h3>
-            <p>Vùng đất của cố đô, phố cổ và những di sản văn hóa đặc sắc.</p>
-          </div>
+        <div>
+          <h3>Hỗ trợ</h3>
+
+          <a href="#">Chính sách bảo hành</a>
+          <a href="#">Chính sách đổi trả</a>
+          <a href="#">Vận chuyển</a>
+          <a href="#">FAQ</a>
         </div>
 
-        <div class="region south">
-          <div>
-            <span>03</span>
-            <h3>Miền Nam</h3>
-            <p>
-              Một vùng đất năng động với sông nước, văn hóa đa dạng và những đô
-              thị sôi động.
-            </p>
-          </div>
+        <div>
+          <h3>Newsletter</h3>
+
+          <p>Nhận thông tin deal mới nhất.</p>
+
+          <form id="newsletterForm">
+            <input type="email" placeholder="Email của bạn" required />
+
+            <button type="submit">→</button>
+          </form>
         </div>
       </div>
-    </section>
 
-    <!-- QUOTE -->
-    <section class="quote">
-      <div class="quote-mark">“</div>
-
-      <p>
-        Mỗi chuyến đi không chỉ là hành trình đến một nơi mới, mà còn là hành
-        trình tìm hiểu những câu chuyện đã tạo nên một Việt Nam ngày hôm nay.
-      </p>
-
-      <span>— VIỆT NAM DI SẢN —</span>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="lien-he">
-      <div class="footer-logo">VIỆT NAM <span>DI SẢN</span></div>
-
-      <p>Khám phá lịch sử · Văn hóa · Thiên nhiên Việt Nam</p>
-
-      <div class="footer-links">
-        <a href="#home">Trang chủ</a>
-        <a href="#di-tich">Di tích</a>
-        <a href="#di-san">Di sản</a>
-        <a href="#van-hoa">Văn hóa</a>
-      </div>
-
-      <div class="copyright">
-        © 2026 Việt Nam Di Sản. Thiết kế với tình yêu dành cho Việt Nam.
-      </div>
+      <div class="footer-bottom">© 2026 NEXUS GAMING. All Rights Reserved.</div>
     </footer>
+
+    <!-- ================= CART DRAWER ================= -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="drawer-header">
+        <h2>Giỏ hàng</h2>
+
+        <button id="closeCart">✕</button>
+      </div>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Tạm tính</span>
+
+          <strong id="cartTotal"> 0₫ </strong>
+        </div>
+
+        <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+          THANH TOÁN
+        </button>
+      </div>
+    </aside>
+
+    <!-- ================= PRODUCT MODAL ================= -->
+
+    <div class="modal" id="productModal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeProductModal">✕</button>
+
+        <div id="productModalContent"></div>
+      </div>
+    </div>
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div class="modal" id="checkoutModal">
+      <div class="modal-content checkout-modal">
+        <button class="modal-close" id="closeCheckoutModal">✕</button>
+
+        <h2>Thanh toán</h2>
+
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label>Họ và tên</label>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Nguyễn Văn A"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Số điện thoại</label>
+            <input type="tel" name="phone" required placeholder="09xxxxxxxx" />
+          </div>
+
+          <div class="form-group">
+            <label>Địa chỉ nhận hàng</label>
+            <textarea
+              name="address"
+              rows="3"
+              required
+              placeholder="Nhập địa chỉ..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Phương thức thanh toán</label>
+
+            <select name="payment">
+              <option value="cod">Thanh toán khi nhận hàng</option>
+
+              <option value="bank">Chuyển khoản ngân hàng</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">
+            ĐẶT HÀNG
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast">
+      <span id="toastMessage">Đã thêm vào giỏ hàng</span>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
